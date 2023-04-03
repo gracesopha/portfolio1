@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+/* Begin site styles below */
+
+*{
+    /* FONTS */
+      --font-one: Sorts Mill Goudy; 
+      --font-two: Times;
+    
+    /*  COLORS */
+      --background: #F9F6F0;
+      --border: #d4cdc9;
+    
+      --text: #000; 
+      --linkhover: #ccc;
+      --bold: #000;  
+      --specialbg: #bfb5ae;  
+      --text-special: #fff;  
+    
+    /*  SIZING */
+      --container: 35em; /* 560/16px*/
+      --line-divider: 3.125em; /* 50/16px*/
+    
+      --text-header: 3.75em; /* 60/16px*/
+      --text-subtitle: 1.25em; /* 20/16px*/
+      --text-navigation: .8125em; /* 13/16px*/
+      --text-inline: .875em; /* 14/16px*/
+    
+      --text-firstletter: 4em; /* 64/16px*/
+      --text-body: .875em; 
+      --text-bold: .6875em; /* 11/16px*/
+    }
+    
+    /* GENERAL */
+    
+    ::-webkit-scrollbar { display: none; }
+    
+     body {
+        background: var(--background);
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    /* MAIN TITLE */
+    
+     .header {
+        margin: 3.125em auto;
+        text-align: center;
+        width: var(--container);
+        word-break: break-word;
+    }
+    
+    .header h1 {
+        font-family: var(--font-one);
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size:  var(--text-header);
+        line-height: .875em; 
+        margin: .325em 0em;
+     }
+    
+    .header i {
+        font-family: var(--font-two);
+        font-weight: 400;
+        text-transform: lowercase;
+        font-size: var(--text-subtitle);
+        letter-spacing: .01em;
+        margin: 0;
+    }
+    
+    .header a {
+        padding: 0 .125em;
+        margin-top: 0;
+        font-family: var(--font-two);
+        text-decoration: none;
+        color: var(--text);
+        font-style: italic;
+        letter-spacing: .01em;
+        transition: 0.5s ease all;
+        font-size: .8125em;
+    }
+    
+    .header a:hover {
+        color: var(--linkhover);
+        transition: 0.5s ease all;
+    }
+    
+    .header em {
+        font-size: .875em;
+        vertical-align: middle;
+    }
+    
+    .line {
+        width: 1px;
+        height: var(--line-divider);
+        background: var(--text);
+        margin: 2.1875em auto 1875em auto;
+    }
+    
+    /* THREE PART SECTION  */
+    
+     .flex-container {
+        display: flex;
+        justify-content: space-around;
+        width: var(--container);
+        margin: 0 auto;
+        margin-bottom: 3.125em;
+    }
+    
+     .flex-items {
+        height: 1.25em;
+        margin: .875em;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    #flex-center img {
+        height:  3.75em; 
+       object-fit: contain;
+    }
+    
+    #flex-sides {
+        font-size: var(--text-inline);
+        font-family: var(--font-two);
+        font-style: italic;
+        letter-spacing: .01em;
+        padding: 0 .625em;
+    }
+    
+    /* BODY  */
+    
+    .text {
+        color: var(--text);
+        width: var(--container);
+        margin: 0 auto;
+        margin-top: 4em;
+        border: 2px solid var(--background);
+        padding: 0 4.0625em .5em 4.0625em;
+        margin-bottom: 4em;
+        text-align:center;
+    }
+    
+    .double-border {
+      outline: 2px solid var(--border);
+      box-shadow:inset 0 0 0 1px var(--border);
+    }
+    
+    span {
+        float: left;
+        margin-top: .3em; /* change top of the letter's spacing */
+        width: .8em;  /* change right of the letter's spacing */
+        font-size: var(--text-firstletter);
+        font-family: var(--font-two);
+    }
+
+    span#extraspan {
+        float: left;
+        margin-top: .3em; /* change top of the letter's spacing */
+        margin-right: .2em;
+        width: .8em;  /* change right of the letter's spacing */
+        font-size: var(--text-firstletter);
+        font-family: var(--font-two);
+    }
+    
+    .text p {
+        font-family: var(--font-two);
+        font-size: var(--text-body);
+        text-align: justify;
+        line-height: 165%;
+     }
+    
+    .text b {
+        text-transform: uppercase;
+        font-size: var(--text-bold);
+        color: var(--bold);
+        letter-spacing: 0.1em;
+    }
+    
+    .text u {
+        text-decoration: none;
+        border-bottom: .0975em solid var(--border);
+    }
+    
+    .text img {
+        width: 100%;
+        object-fit: cover;
+        padding: 1.25em 0;
+    }
+    
+    /* SUB HEADER  */
+        
+    #subheader {
+      font-family: var(--font-one);
+      font-size: 1.875em;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .01em;
+      margin: 2.5em 0 0 0; 
+     }
+    
+    #subheader-subtitle {
+      font-family: var(--font-two);
+      font-size: .875em;
+      font-weight: 400;
+      text-transform: lowercase;
+      letter-spacing: .01em;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: .02em;
+     }
+
+    /* MEDIA QUERIES */
+    /* 300/16px em*/
+    @media screen and (min-width: 18.75em) {
+   
+    }
