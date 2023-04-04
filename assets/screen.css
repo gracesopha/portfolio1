@@ -101,7 +101,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
         width: 1px;
         height: var(--line-divider);
         background: var(--text);
-        margin: 2.1875em auto 1875em auto;
+        margin: 2.1875em auto 2.1875em auto;
     }
     
     /* THREE PART SECTION  */
@@ -195,6 +195,29 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
         object-fit: cover;
         padding: 1.25em 0;
     }
+
+    a {
+        color: black;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        padding: 1em;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+        grid-gap: 1.5em 1.5em;
+      }
     
     /* SUB HEADER  */
         
@@ -204,7 +227,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: .01em;
-      margin: 2.5em 0 0 0; 
+      margin: 1.5em 0 0 0; 
      }
     
     #subheader-subtitle {
@@ -221,5 +244,5 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     /* MEDIA QUERIES */
     /* 300/16px em*/
     @media screen and (min-width: 18.75em) {
-   
+
     }
