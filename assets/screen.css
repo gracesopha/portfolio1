@@ -200,6 +200,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
         color: black;
     }
 
+    footer {
+        font: var(--font-one);
+        font-size: .8em;
+        padding: 1.25em 0;
+        justify-content: center;
+    }
+
     /* CONTACT */
 
     .contact {
