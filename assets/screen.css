@@ -146,6 +146,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     }
     
     /* BODY  */
+
+    figure {
+        mix-blend-mode: multiply; /* to make white background transparent */
+    }
     
     .text {
         color: var(--text);
